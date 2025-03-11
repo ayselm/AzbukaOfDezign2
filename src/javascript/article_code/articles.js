@@ -38,7 +38,7 @@ globalThis.articles = [
         "link_page": "grids.html",
         "reading_time": 25,
         "tags": ["Мидл"],
-        "categories": ["вёрстка", "дизайн", "типографика"]
+        "categories": ["вёрстка", "дизайн"]
     },
     {
         "slug": "burger",
@@ -48,23 +48,23 @@ globalThis.articles = [
         "link_page": "burger.html",
         "reading_time": 15,
         "tags": ["Джун"],
-        "categories": ["UI", "дизайн"]
+        "categories": ["UI", "дизайн", "сленг"]
     },
     {
         "slug": "dedlajn",
-        "preview_img": "./images/deadline.jpg",
-        "title": "Дедлайн",
-        "short_desc": "Дедлайн — это срок выполнения работы или задачи, определенный момент времени, к которому должен быть достигнут результат. По истечении времени элемент считается просроченным....",
-        "link_page": "dedlajn.html",
+        "preview_img": "./images/allign.png",
+        "title": "Выключка",
+        "short_desc": "Выключка — важнейший элемент верстки и композиции. Выравнивание может показаться простым элементом дизайна, однако это представление обманчиво. Плохо продуманная выключка может...",
+        "link_page": "allign.html",
         "reading_time": 15,
         "tags": ["Джун"],
         "categories": ["менеджмент", "типографика"]
     },
     {
         "slug": "monoshirinny-shrift",
-        "preview_img": "./images/couple.jpg",
+        "preview_img": "./images/mono.jpg",
         "title": "Моноширинный шрифт",
-        "short_desc": "Шрифт, в котором все символы имеют одинаковую ширину...",
+        "short_desc": "Моноширинный шрифт - это тип шрифта, в котором все символы занимают одинаковую ширину. Такие шрифты часто используются в программировании и текстовых редакторах для удобства чтения кода...",
         "link_page": "monoshirinny-shrift.html",
         "reading_time": 12,
         "tags": ["Мидл"],
@@ -72,10 +72,10 @@ globalThis.articles = [
     },
     {
         "slug": "modulnaya-setka",
-        "preview_img": "./images/grids.jpg",
-        "title": "Модульная сетка",
-        "short_desc": "Система горизонтальных и вертикальных направляющих для упорядочивания контента...",
-        "link_page": "modulnaya-setka.html",
+        "preview_img": "./images/cursive.jpg",
+        "title": "Курсив",
+        "short_desc": "Курсив - это стиль написания текста с наклоном букв вправо; курсив обычно используется для выделения слов или фраз внутри основного текста — например, названий книг или иностранных слов...",
+        "link_page": "cursive.html",
         "reading_time": 14,
         "tags": ["Мидл"],
         "categories": ["вёрстка", "дизайн", "типографика"]
@@ -84,37 +84,37 @@ globalThis.articles = [
         "slug": "fish",
         "preview_img": "./images/fish.jpg",
         "title": "Рыба",
-        "short_desc": "Текст-заполнитель, используемый в макетах и дизайне.",
+        "short_desc": "Рыба – это текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах...",
         "link_page": "fish.html",
         "reading_time": 5,
         "tags": ["Джун"],
-        "categories": ["контент", "дизайн", "типографика"]
+        "categories": ["контент", "дизайн", "типографика", "сленг"]
     },
     {
         "slug": "dizajn-lidy",
-        "preview_img": "./images/toast.jpg",
-        "title": "Дизайн лиды",
-        "short_desc": "Описание дизайн лидов...",
-        "link_page": "dizajn-lidy.html",
+        "preview_img": "./images/tracking.jpg",
+        "title": "Трекинг",
+        "short_desc": "Трекинг — это метод увеличения или уменьшения плотности текстового блока. Примечание. Значения кернинга и трекинга применяются к текстам на японском языке, но как правило эти параметры...",
+        "link_page": "tracking.html",
         "reading_time": 15,
         "tags": ["Мидл"],
         "categories": ["дизайн", "типографика"]
     },
     {
         "slug": "dizajn-sistema",
-        "preview_img": "./images/tracking.jpg",
+        "preview_img": "./images/desygnSystem.png",
         "title": "Дизайн-система",
-        "short_desc": "Описание дизайн-системы...",
+        "short_desc": "Дизайн-система - это набор стандартов компонентов шаблонов которые помогают командам создавать единообразные продукты интерфейсы обеспечивая согласованность визуального языка во всех...",
         "link_page": "dizajn-sistema.html",
         "reading_time": 15,
         "tags": ["Джун"],
-        "categories": ["разработка", "дизайн"]
+        "categories": ["разработка", "дизайн", "типографика", "колористика"]
     },
     {
         "slug": "mokap",
-        "preview_img": "./images/img3.png",
-        "title": "Мокап",
-        "short_desc": "Описание мокапа...",
+        "preview_img": "./images/burger.png",
+        "title": "Бургер",
+        "short_desc": "Бургер – это элемент пользовательского интерфейса представляющий собой значок из трех горизонтальных линий который используется как кнопка меню навигации на мобильных устройствах сайтах...",
         "link_page": "mokap.html",
         "reading_time": 15,
         "tags": ["Мидл"],
@@ -122,59 +122,59 @@ globalThis.articles = [
     },
     {
         "slug": "maskot",
-        "preview_img": "./images/img4.png",
-        "title": "Маскот",
-        "short_desc": "Описание маскота...",
-        "link_page": "maskot.html",
+        "preview_img": "./images/merch.png",
+        "title": "Мерч",
+        "short_desc": "Мерч – это одежда, аксессуары, сувениры и любые другие функциональные или просто красивые вещи с символикой бренда. Это не только способ привлечь новых клиентов, а также повысить узнаваемость компании...",
+        "link_page": "merchh.html",
         "reading_time": 15,
         "tags": ["Джун"],
         "categories": ["брендинг", "иллюстрация", "типографика"]
     },
     {
         "slug": "mudbord",
-        "preview_img": "./images/img5.png",
-        "title": "Мудборд",
-        "short_desc": "Вдохновляющая коллекция изображений и идей для концепции дизайна...",
-        "link_page": "mudbord.html",
+        "preview_img": "./images/chandelier.png",
+        "title": "Люстра",
+        "short_desc": "Люстра — графический редактор Adobe Illustrator. Adobe Illustrator — вторая по популярности программа из пакета Adobe после знаменитого Photoshop. Основная её функция — создание иллюстраций...",
+        "link_page": "illustrator.html",
         "reading_time": 10,
         "tags": ["Джун"],
-        "categories": ["дизайн", "референсы", "типографика"]
+        "categories": ["дизайн", "референсы", "типографика", "сленг"]
     },
     {
         "slug": "monohrom",
         "preview_img": "./images/mono.jpg",
-        "title": "Монохром",
-        "short_desc": "Использование одного цвета в различных оттенках...",
-        "link_page": "monohrom.html",
+        "title": "Мудборд",
+        "short_desc": "Мудборд - это коллаж из изображений, текстов и других визуальных элементов, который используется для передачи идей и концепций. Он помогает собрать вдохновение и визуализировать...",
+        "link_page": "moodboard.html",
         "reading_time": 10,
         "tags": ["Джун"],
-        "categories": ["цвет", "дизайн", "брендинг"]
+        "categories": ["цвет", "дизайн", "брендинг", "колористика"]
     },
     {
-        "slug": "monograma",
-        "preview_img": "./images/img4.png",
-        "title": "Монограмма",
-        "short_desc": "Графический знак, созданный из переплетения букв...",
-        "link_page": "monograma.html",
+        "slug": "nositel",
+        "preview_img": "./images/nositel.png",
+        "title": "Носитель",
+        "short_desc": "Носитель - это материал или поверхность, на которой размещается графика или информация. Носители могут быть физическими (например, бумага, холст) или цифровыми (например, экраны, веб-сайты)...",
+        "link_page": "nositel.html",
         "reading_time": 12,
         "tags": ["Мидл"],
         "categories": ["брендинг", "логотип"]
     },
     {
-        "slug": "mindmap",
-        "preview_img": "./images/img5.png",
-        "title": "Майндмэп",
-        "short_desc": "Диаграмма, помогающая визуализировать идеи...",
-        "link_page": "mindmap.html",
+        "slug": "monofont",
+        "preview_img": "./images/mono.jpg",
+        "title": "Моноширинный шрифт",
+        "short_desc": "Моноширинный шрифт – это тип шрифта, в котором все символы занимают одинаковую ширину. Такие шрифты часто используются в программировании и текстовых редакторах для удобства чтения кода. Моноширинные...",
+        "link_page": "monofont.html",
         "reading_time": 12,
         "tags": ["Мидл"],
         "categories": ["проектирование", "идеи", "брендинг"]
     },
     {
         "slug": "neomorfizm",
-        "preview_img": "./images/img3.png",
+        "preview_img": "./images/neo.png",
         "title": "Неоморфизм",
-        "short_desc": "Стиль дизайна, имитирующий выпуклые элементы...",
+        "short_desc": "Неоморфизм - это стиль дизайна, который сочетает в себе элементы реалистичного рендеринга с минималистичным подходом. Он создает эффект глубины и объема за счет использования теней и света, что делает...",
         "link_page": "neomorfizm.html",
         "reading_time": 15,
         "tags": ["Сениор"],
@@ -182,9 +182,9 @@ globalThis.articles = [
     },
     {
         "slug": "naming",
-        "preview_img": "./images/img4.png",
+        "preview_img": "./images/name.png",
         "title": "Нейминг",
-        "short_desc": "Процесс создания названий для брендов...",
+        "short_desc": "Нейминг - это процесс создания названия для продукта, компании или услуги. Он включает в себя исследование рынка, целевой аудитории и конкурентной среды, чтобы выбрать наиболее подходящее имя...",
         "link_page": "naming.html",
         "reading_time": 14,
         "tags": ["Мидл"],
@@ -192,9 +192,9 @@ globalThis.articles = [
     },
     {
         "slug": "nostitel",
-        "preview_img": "./images/img5.png",
-        "title": "Носитель",
-        "short_desc": "Материал или объект, на который наносится дизайн...",
+        "preview_img": "./images/key.png",
+        "title": "Кейвижуал",
+        "short_desc": "Кейвижуал (KV) - это ключевой визуальный элемент рекламной кампании или проекта; кейвижуал служит основным изображением или концепцией всей кампании — он должен быть запоминающимся и отражать...",
         "link_page": "nostitel.html",
         "reading_time": 10,
         "tags": ["Джун"],
@@ -202,19 +202,19 @@ globalThis.articles = [
     },
     {
         "slug": "beha",
-        "preview_img": "./images/img3.png",
+        "preview_img": "./images/gallery.png",
         "title": "Беха",
         "short_desc": "Behance — это многомиллионная коллекция работ от дизайнеров, разработчиков и творческих людей со всего Мира...",
         "link_page": "beha.html",
         "reading_time": 15,
         "tags": ["Сениор"],
-        "categories": ["портфолио", "инструменты"]
+        "categories": ["портфолио", "инструменты", "сленг"]
     },
     {
         "slug": "ornament",
-        "preview_img": "./images/img4.png",
+        "preview_img": "./images/ornament.png",
         "title": "Орнамент",
-        "short_desc": "Декоративный узор, применяемый в дизайне...",
+        "short_desc": "Орнамент - это декоративный элемент, используемый для украшения объектов или пространств. Орнаменты могут быть геометрическими, растительными или абстрактными и применяются в различных...",
         "link_page": "ornament.html",
         "reading_time": 10,
         "tags": ["Джун"],
@@ -222,13 +222,13 @@ globalThis.articles = [
     },
     {
         "slug": "overprint",
-        "preview_img": "./images/img5.png",
+        "preview_img": "./images/overprint.png",
         "title": "Оверпринт",
-        "short_desc": "Технология наложения одного цвета на другой...",
+        "short_desc": "Орнамент - это декоративный элемент, используемый для украшения объектов или пространств. Орнаменты могут быть геометрическими, растительными или абстрактными и применяются в различных...",
         "link_page": "overprint.html",
         "reading_time": 12,
         "tags": ["Мидл"],
-        "categories": ["печать", "цвет", "сленг"]
+        "categories": ["печать", "цвет", "колористика"]
     },
     {
         "slug": "plugin",
@@ -238,7 +238,7 @@ globalThis.articles = [
         "link_page": "plugin.html",
         "reading_time": 10,
         "tags": ["Мидл"],
-        "categories": ["разработка", "инструменты", "сленг"]
+        "categories": ["разработка", "инструменты"]
     },
 
     {
@@ -254,20 +254,20 @@ globalThis.articles = [
 
     {
         "slug": "product-designer",
-        "preview_img": "./images/img5.png",
+        "preview_img": "./images/productDesigner.png",
         "title": "Продуктовый дизайнер",
-        "short_desc": "Специалист, отвечающий за создание и улучшение продукта.",
+        "short_desc": "Продуктовый дизайнер — это и аналитик, и исследователь, и тот, кто руками рисует интерфейсы. Продуктовый дизайнер разрабатывает продукт под конкретную задачу, например, сервис доставки еды...",
         "link_page": "product-designer.html",
         "reading_time": 15,
         "tags": ["Мидл"],
-        "categories": ["дизайн", "UX/UI", "сленг", "интерфейс"]
+        "categories": ["дизайн", "UX/UI", "интерфейс"]
     },
 
     {
         "slug": "easter-egg",
-        "preview_img": "./images/img5.png",
-        "title": "Пасхалка",
-        "short_desc": "Скрытый элемент в интерфейсе или контенте, обнаруживаемый случайно.",
+        "preview_img": "./images/radio.png",
+        "title": "Радиобаттон",
+        "short_desc": "Радиобаттон — это элемент в визуальном оформлении веб-сайта, который можно отметить, чтобы выбрать один из предложенных вариантов...",
         "link_page": "easter-egg.html",
         "reading_time": 10,
         "tags": ["Джун"],
@@ -276,9 +276,9 @@ globalThis.articles = [
 
     {
         "slug": "reference",
-        "preview_img": "./images/img5.png",
-        "title": "Референс",
-        "short_desc": "Образец или пример, используемый для вдохновения или подражания.",
+        "preview_img": "./images/ab.png",
+        "title": "А/В-тестирование",
+        "short_desc": "А/В-тестирование - это метод сравнения двух версий одного элемента (например: веб-страницы рекламы) чтобы определить какая версия более эффективна...",
         "link_page": "reference.html",
         "reading_time": 10,
         "tags": ["Мидл"],
@@ -287,9 +287,9 @@ globalThis.articles = [
 
     {
         "slug": "raster-graphics",
-        "preview_img": "./images/img3.png",
-        "title": "Растровая графика",
-        "short_desc": "Изображение, состоящее из пикселей, в отличие от векторной графики.",
+        "preview_img": "./images/icons.png",
+        "title": "Иконка",
+        "short_desc": "Иконка - это маленькое изображение или символ, представляющий действие, объект или концепцию на графическом интерфейсе пользователя (GUI). Иконки помогают пользователям быстро идентифицировать функции...",
         "link_page": "raster-graphics.html",
         "reading_time": 10,
         "tags": ["Сениор"],
@@ -297,14 +297,14 @@ globalThis.articles = [
     },
 
     {
-        "slug": "storytelling",
-        "preview_img": "./images/img5.png",
-        "title": "Сторителлинг",
-        "short_desc": "Искусство создания историй для вовлечения аудитории.",
+        "slug": "monochrome",
+        "preview_img": "./images/monochrome.png",
+        "title": "Монохром",
+        "short_desc": "Монохром – изображение, содержащее лишь один цвет (который, однако, может быть разной яркости). В противоположность монохромному, цветное изображение содержит различные цвета...",
         "link_page": "storytelling.html",
         "reading_time": 15,
         "tags": ["Мидл"],
-        "categories": ["контент", "брендинг", "интерфейс"]
+        "categories": ["контент", "брендинг", "интерфейс", "колористика"]
     },
 
     {
@@ -363,43 +363,43 @@ globalThis.articles = [
     },
 
     {
-        "slug": "source-file",
-        "preview_img": "./images/img5.png",
-        "title": "Исходник",
-        "short_desc": "Оригинальный файл проекта, доступный для редактирования.",
+        "slug": "golden-ratio",
+        "preview_img": "./images/golden-ratio.png",
+        "title": "Золотое сечение",
+        "short_desc": "Золотое сечение — это такое отношение частей к целому, когда большая часть относится к меньшей так же, как целая к большей. Это отношение составляет 1,618. У прямоугольника, построенного по этому...",
         "link_page": "source-file.html",
         "reading_time": 5,
         "tags": ["Мидл"],
-        "categories": ["разработка", "дизайн", "колористика", "композиция"]
+        "categories": ["разработка", "дизайн", "композиция"]
     },
 
     {
-        "slug": "iteration",
-        "preview_img": "./images/img3.png",
-        "title": "Итерация",
-        "short_desc": "Повторение процесса с целью улучшения результата.",
+        "slug": "composition",
+        "preview_img": "./images/composition.png",
+        "title": "Композиция",
+        "short_desc": "Композиция — это искусство и наука организации элементов в пространстве для создания гармоничного и эффективного визуального восприятия. В контексте дизайна, композиция включает в себя...",
         "link_page": "iteration.html",
         "reading_time": 10,
         "tags": ["Мидл"],
-        "categories": ["дизайн", "разработка", "колористика", "композиция"]
+        "categories": ["дизайн", "разработка", "композиция"]
     },
 
     {
         "slug": "leading",
-        "preview_img": "./images/road.jpg",
-        "title": "Интерлиньяж",
-        "short_desc": "Расстояние между строками текста в типографике.",
+        "preview_img": "./images/grids.jpg",
+        "title": "Гриды",
+        "short_desc": "Гриды – этоструктура, которая помогает организовать элементы дизайна на странице, разделяя пространство на колонки и строки для достижения визуального порядка...",
         "link_page": "leading.html",
         "reading_time": 5,
         "tags": ["Мидл"],
-        "categories": ["дизайн", "шрифты", "колористика", "композиция"]
+        "categories": ["дизайн", "шрифты", "композиция"]
     },
 
     {
         "slug": "kerning",
-        "preview_img": "./images/pair.jpg",
-        "title": "Кернинг",
-        "short_desc": "Регулировка расстояния между отдельными буквами.",
+        "preview_img": "./images/balance.png",
+        "title": "Баланс",
+        "short_desc": "Баланс - распределение визуального веса элементов на странице, которое может быть симметричным (равномерно распределённым) или асимметричным (неравномерным)...",
         "link_page": "kerning.html",
         "reading_time": 5,
         "tags": ["Джун"],
@@ -408,20 +408,20 @@ globalThis.articles = [
 
     {
         "slug": "font-size",
-        "preview_img": "./images/size.jpg",
-        "title": "Кегль",
-        "short_desc": "Размер шрифта, определяющий высоту букв.",
+        "preview_img": "./images/modules.png",
+        "title": "Модульность",
+        "short_desc": "Модульность - подход к дизайну, при котором интерфейс разбивается на независимые блоки или модули, что упрощает организацию и изменение контента...",
         "link_page": "font-size.html",
         "reading_time": 5,
         "tags": ["Джун"],
-        "categories": ["дизайн", "шрифты", "колористика", "композиция"]
+        "categories": ["дизайн", "шрифты", "композиция"]
     },
 
     {
         "slug": "composition",
-        "preview_img": "./images/img4.png",
-        "title": "Композиция",
-        "short_desc": "Расположение элементов в дизайне для создания гармоничного восприятия.",
+        "preview_img": "./images/rythm.png",
+        "title": "Ритм",
+        "short_desc": "Ритм - повторяющиеся элементы или структуры, которые создают визуальное движение и последовательность в дизайне, помогая направлять взгляд пользователя по странице...",
         "link_page": "composition.html",
         "reading_time": 10,
         "tags": ["Джун"],
@@ -430,29 +430,29 @@ globalThis.articles = [
 
     {
         "slug": "case-study",
-        "preview_img": "./images/img5.png",
-        "title": "Кейс",
-        "short_desc": "Разбор реального проекта с анализом решений и результатов.",
+        "preview_img": "./images/space.png",
+        "title": "Пространство",
+        "short_desc": "Пространство (Whitespace) - пустое пространство между элементами дизайна, которое помогает улучшить восприятие контента и уменьшает визуальную загруженность...",
         "link_page": "case-study.html",
         "reading_time": 15,
         "tags": ["Джун"],
-        "categories": ["маркетинг", "дизайн", "колористика", "композиция"]
+        "categories": ["маркетинг", "дизайн", "композиция"]
     },
     {
         "slug": "kadrovanie",
-        "preview_img": "./images/img4.png",
+        "preview_img": "./images/kadrirovaniye.png",
         "title": "Кадрирование",
-        "short_desc": "Описание кадрирования...",
+        "short_desc": "Кадрирование — это обрезка границ готового снимка с целью улучшения композиции. Кадрировать изображение можно как для изменения формата (при размещении на различных платформах...",
         "link_page": "kadrovanie.html",
         "reading_time": 15,
         "tags": ["Джун"],
-        "categories": ["дизайн", "фото", "колористика", "композиция"]
+        "categories": ["дизайн", "фото", "композиция"]
     },
     {
-        "slug": "keyvisual",
-        "preview_img": "./images/img5.png",
-        "title": "Кейвижуал (KV)",
-        "short_desc": "Описание кейвижуала...",
+        "slug": "ierarchy",
+        "preview_img": "./images/ierarchy.png",
+        "title": "Иерархия",
+        "short_desc": "Иерархия - принцип, который определяет порядок важности элементов на странице, используя размеры, цвет и расположение для привлечения внимания пользователя к наиболее значимым частям контента....",
         "link_page": "keyvisual.html",
         "reading_time": 15,
         "tags": ["Джун"],
@@ -560,13 +560,13 @@ globalThis.articles = [
     },
     {
         "slug": "aidentika",
-        "preview_img": "./images/img4.png",
+        "preview_img": "./images/identity.png",
         "title": "Айдентика",
-        "short_desc": "Описание айдентики...",
+        "short_desc": "Айдентика — это комплекс элементов, формирующих отличительный и целостный образ бренда: шрифтов, цветов, форм, слов и смыслов, которые используются во всем визуале компании и на всех каналах...",
         "link_page": "aidentika.html",
         "reading_time": 15,
         "tags": ["Мидл"],
-        "categories": ["брендинг", "дизайн"]
+        "categories": ["брендинг", "дизайн", "колористика"]
     },
     {
         "slug": "antikva",
@@ -690,13 +690,13 @@ globalThis.articles = [
     },
     {
         "slug": "grjaznye-cveta",
-        "preview_img": "./images/img5.png",
+        "preview_img": "./images/dirtyColor.png",
         "title": "Грязные цвета",
-        "short_desc": "Описание грязных цветов...",
+        "short_desc": "Грязные цвета - это оттенки цветов которые выглядят менее насыщенными либо грязными из-за смешивания нескольких цветов друг с другом либо добавления серого черного цвета к ним...",
         "link_page": "grjaznye-cveta.html",
         "reading_time": 15,
         "tags": ["Джун"],
-        "categories": ["цвет"]
+        "categories": ["цвет", "колористика"]
     },
     {
         "slug": "gradient",

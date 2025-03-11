@@ -28,6 +28,7 @@ module.exports = {
     test1: './src/javascript/ui/test1.js',
     404: './src/javascript/ui/error.js',
     styles: './src/page.css',
+    alphabetCode: './src/javascript/ui/alphabetCode.js',
     article: './src/javascript/article_code/articles.js',
     articleWork: './src/javascript/article_code/articlesWork.js'
   },
@@ -117,7 +118,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/alphabet.html',
       filename: './alphabet.html',
-      chunks: ['alphabet']
+      chunks: ['alphabet', 'article', 'alphabetCode']
     }),
 
     // Internal pages
@@ -127,15 +128,6 @@ module.exports = {
       template: './src/catalog.html',
       filename: './catalog.html',
       chunks: ['catalog', 'article', 'articleWork']
-    }),
-
-    // Internal pages
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/alphabet.html',
-      filename: './alphabet.html',
-      chunks: ['alphabet']
     }),
 
     // Internal pages

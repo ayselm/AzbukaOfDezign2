@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const words = {};
 
 
-    articles.forEach(article => {
+    globalThis.articles.forEach(article => {
         const firstLetter = article.title[0].toUpperCase();
         const title = article.title;
         const link = article.link_page;
