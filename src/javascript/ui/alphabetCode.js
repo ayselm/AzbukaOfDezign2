@@ -1,3 +1,19 @@
+function setActiveLetter(letter) {
+    const alphabetDiv = document.querySelector('.Alphabet');
+    const letterDivs = alphabetDiv.querySelectorAll('div');
+
+    const currentActive = alphabetDiv.querySelector('.active');
+    if (currentActive) {
+        currentActive.classList.remove('active');
+    }
+
+    letterDivs.forEach(div => {
+        if (div.textContent === letter) {
+            div.classList.add('active');
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     let mode = 'alphabet';
     let selectedLetter = null;
@@ -29,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, {});
 
 
-    const alphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯ".split("");
+    const alphabet = "АБВГДЕЁЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯ".split("");
 
     const contentDiv = document.getElementById("content");
     const btnAlphabet = document.getElementById("btnAlphabet");
@@ -43,6 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         btn.onclick = () => {
             selectedLetter = letter;
+            history.pushState(null, '', `/alphabet-${letter}.html`);
+            document.title = `Глоссарий - ${letter}`;
             renderDictionaryForLetter(letter);
         };
         return btn;
@@ -58,7 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function renderAlphabet(letterBold = null) {
-        contentDiv.innerHTML = "";
+        if(document.querySelector('.Alphabet') != null){
+            contentDiv.innerHTML = "";
+        }
         const alphabetDiv = document.createElement("div");
         alphabetDiv.className = "Alphabet";
 
@@ -67,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alphabetDiv.appendChild(btn);
         });
 
-        contentDiv.appendChild(alphabetDiv);
+        contentDiv.prepend(alphabetDiv);
     }
 
     function renderDictionaryForLetter(letter) {
@@ -87,6 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         dictionaryDiv.appendChild(list);
+        const divider = document.createElement("div");
+        divider.className = "divider";
+        contentDiv.appendChild(divider);
         contentDiv.appendChild(dictionaryDiv);
     }
 
@@ -132,6 +155,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     btnAlphabet.onclick = function () {
         mode = 'alphabet';
+        history.pushState(null, '', `/${mode}.html`);
+        document.title = 'Словарь';
         btnAlphabet.classList.add("active");
         btnDictionary.classList.remove("active");
         renderAlphabet();
@@ -139,10 +164,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     btnDictionary.onclick = function () {
         mode = 'dictionary';
+        history.pushState(null, '', `/${mode}.html`);
+        document.title = 'Словарь';
         btnDictionary.classList.add("active");
         btnAlphabet.classList.remove("active");
         renderDictionary();
     };
 
-    renderAlphabet();
+    if(activeSwitcher != "dictionary"){
+        renderAlphabet();
+    }
+    if(activeLetter != null){
+        setActiveLetter(activeLetter);
+    }
 });

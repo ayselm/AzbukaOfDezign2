@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <head></head>
+    <title>Глоссарий - <%= letter %></title>
+    <script>
+        const constArticle = false;
+        const nopaginationRelated = true;
+        const activeSwitcher = 'alphabet';
+        const activeLetter = '<%= letter %>';
+    </script>
+</head>
+<body class="">
+<header_main></header_main>
+<div class="wrapper">
+    <div class="AlphabetBlock">
+        <alphabet></alphabet>
+        <div id="content">
+            <div class="divider"></div>
+            <div class="Dictionary">
+                <h3><%= letter %></h3>
+                <%= articles %>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <footer></footer>
+</div>
+</body>
+</html>

@@ -12,7 +12,9 @@
   },
   "homepage": "https://github.com/ZakharDay/static-site-boilerplate#readme",
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
+    "start": "webpack serve --open --config webpack.dev.js --hot",
+    "start:fast": "webpack serve --open --config webpack.dev.js --hot --no-live-reload",
+    "start:gallery": "webpack serve --open --config webpack.dev.js --hot --no-live-reload --port 3000",
     "watch": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
@@ -35,6 +37,7 @@
     "postcss-preset-env": "^7.7.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
+    "style-loader": "^3.3.4",
     "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^4.11.0",

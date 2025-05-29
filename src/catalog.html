@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
+  <head></head>
   <title>Каталог</title>
-  <analytics></analytics>
+  <script>
+    const constArticle = false;
+    const nopaginationRelated = false;
+  </script>
 </head>
 
-<body class="index">
-<div id="reactComponentRoot"></div>
+<body class="black">
 
-<script type="module" src="javascript/ui/catalog.js"></script>
-<script>
-  const constArticle = false;
-  const nopaginationRelated = false;
-</script>
-<script src="javascript/article_code/articles.js"></script>
-<script src="javascript/article_code/articlesWork.js"></script>
+<header_main></header_main>
+<div class="wrapper">
+  <div class="TopBlock">
+    <h1>Статьи</h1>
+  </div>
+  <catalogFilter></catalogFilter>
+  <relatedArticles></relatedArticles>
+  <pagination></pagination>
+</div>
+<footer></footer>
 </body>
 </html>

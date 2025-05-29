@@ -1,0 +1,13 @@
+    <div class="switcher">
+        <button id="btnAlphabet">
+            Алфавит
+        </button>
+        <button id="btnDictionary">Словарь</button>
+    </div>
+    <Script>
+        if(activeSwitcher == "dictionary"){
+            document.querySelector('#btnDictionary').classList.add('active');
+        }else{
+            document.querySelector('#btnAlphabet').classList.add('active');
+        }
+    </Script>
