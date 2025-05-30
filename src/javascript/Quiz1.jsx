@@ -70,6 +70,9 @@ const Quiz1 = () => {
             setCurrentQuestion((prevQuestion) => prevQuestion + 1);
         } else {
             setShowResult(true);
+            setTimeout(()=>{
+                window.adjustFooterPosition();
+            }, 100);
         }
     };
 

@@ -1,4 +1,4 @@
-function adjustFooterPosition() {
+window.adjustFooterPosition = function() {
     const footer = document.querySelector('.footer');
     const viewportHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;

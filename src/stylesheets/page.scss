@@ -91,8 +91,8 @@ body {
     margin-bottom: 24px;
     background-color:#F9FAFB;
     box-shadow:0px 3.03px 17.7px 0px rgba(0,0,0,0.05);
-    border-bottom-left-radius:22px;
-    border-bottom-right-radius:22px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
     .logo, .logo > svg {
       width: 51px;
       height: 52px;
@@ -891,6 +891,12 @@ body {
     .Test {
 
       display: none;
+
+
+      &.whiteCt{
+        border-radius: 16px;
+        box-shadow: 0px 7.946px 18.193px 0px rgba(36, 38, 43, 0.07);
+      }
       &.active{
         display:block;
       }
@@ -925,10 +931,6 @@ body {
           }
         }
         .text {
-          margin-top:60px;
-          @media (max-width:578px) {
-            margin-top: 0px;
-          }
           font-size:28px;
           @media (max-width:578px) {
             font-size:16px;
@@ -936,14 +938,13 @@ body {
           color:white;
         }
         a {
-          margin-top:60px;
           display:flex;
           flex-direction:row;
           text-decoration:none;
           text-decoration:initial;
           justify-content:center;
           width:120px;
-          height:40px;
+          padding: 10px 0px;
           align-items:center;
           color:black;
           border-radius:12px;
@@ -1049,9 +1050,11 @@ body {
         color: inherit;
 
         text-decoration: none;
-        border-radius: 14px;
         flex-direction: column;
         align-items: center;
+
+        border-radius: 16px;
+        box-shadow: 0px 11.094px 25.4px 0px rgba(36, 38, 43, 0.07);
 
         .ico {
           overflow: hidden;

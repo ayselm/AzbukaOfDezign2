@@ -1,0 +1,2 @@
+(()=>{function e(){var e=document.querySelector(".footer"),t=window.innerHeight;document.documentElement.scrollHeight<=t?(e.style.position="fixed",e.style.bottom="0",e.style.left="0",e.style.right="0"):e.style.position="static"}window.addEventListener("load",e),window.addEventListener("resize",e)})();
+//# sourceMappingURL=footer.7ec53fe6e519d912cf21.js.map
