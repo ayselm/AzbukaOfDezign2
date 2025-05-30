@@ -112,7 +112,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['styles', 'article', 'liveSearch', 'articleWork', 'gallery', 'relatedArticles']
+      chunks: ['styles', 'article', 'liveSearch', 'articleWork', 'categories', 'gallery', 'relatedArticles']
     }),
     // Alphabet page
     new HtmlWebpackPlugin({

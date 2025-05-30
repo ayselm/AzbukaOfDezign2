@@ -80,6 +80,9 @@ const Quiz2 = () => {
         setCurrentQuestion(0);
         setScore(0);
         setShowResult(false);
+        setTimeout(()=>{
+            window.adjustFooterPositionBreak();
+        }, 100);
     };
 
     return (

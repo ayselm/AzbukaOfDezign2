@@ -13,5 +13,10 @@ window.adjustFooterPosition = function() {
     }
 }
 
+window.adjustFooterPositionBreak = function() {
+    const footer = document.querySelector('.footer');
+    footer.style.position = 'static';
+}
+
 window.addEventListener('load', adjustFooterPosition);
 window.addEventListener('resize', adjustFooterPosition);

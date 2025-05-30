@@ -1,0 +1,2 @@
+window.adjustFooterPosition=function(){var t=document.querySelector(".footer"),o=window.innerHeight;document.documentElement.scrollHeight<=o?(t.style.position="fixed",t.style.bottom="0",t.style.left="0",t.style.right="0"):t.style.position="static"},window.adjustFooterPositionBreak=function(){document.querySelector(".footer").style.position="static"},window.addEventListener("load",adjustFooterPosition),window.addEventListener("resize",adjustFooterPosition);
+//# sourceMappingURL=footer.31bf1ef720e850907e51.js.map
