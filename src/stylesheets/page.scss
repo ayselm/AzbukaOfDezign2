@@ -1052,7 +1052,6 @@ body {
         flex-direction: column;
         align-items: center;
 
-        border-radius: 16px;
         box-shadow: 0px 11.094px 25.4px 0px rgba(36, 38, 43, 0.07);
 
         .ico {
@@ -1066,6 +1065,8 @@ body {
             width: 260px;
             height: 378px;
             display: block;
+
+            border-radius: 16px;
           }
 
           .hover-img{
