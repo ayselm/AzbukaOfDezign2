@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const nopaginationRelatedIsActive = nopaginationRelated ?? false;
+    const currentSlug = window.location.pathname.split('/').pop().replace('.html', '');
 
     const articlesPerPage = nopaginationRelatedIsActive ? 5 : 6; // Количество статей на странице
     let currentPage = 1; // Текущая страница
@@ -7,9 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentCategory = urlParams.get('filter') || 'все';
 
     function displayArticles(page = 1, category = 'все') {
-        const filteredArticles = category === 'все'
-            ? globalThis.articles
-            : globalThis.articles.filter(article => article.categories.includes(category));
+        const filteredArticlesBySlug = globalThis.articles.filter(article => article.slug !== currentSlug);
+        const filteredArticles = (category === 'все'
+            ? filteredArticlesBySlug
+            : filteredArticlesBySlug.filter(article => article.categories.includes(category)));
 
         const start = (page - 1) * articlesPerPage;
         const end = start + articlesPerPage;
