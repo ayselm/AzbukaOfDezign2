@@ -5,7 +5,7 @@ globalThis.articles = [
     {
         "slug": "toast",
         "preview_img": "./images/toast.jpg",
-        "title": "Тосты",
+        "title": "Тост",
         "short_desc": "Тост (toast notification) — это маленькое всплывающее сообщение, которое информирует пользователя о результате его действия. Например, если вы скопировали текст или отправили...",
         "link_page": "toast.html",
         "reading_time": 15,
