@@ -69,14 +69,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function createWordListItem(word, link) {
         const listItem = document.createElement("li");
         const anchor = document.createElement("a");
-        anchor.href = 'articles/'+link;
+        anchor.href = 'articles/' + link;
         anchor.textContent = word;
         listItem.appendChild(anchor);
         return listItem;
     }
 
     function renderAlphabet(letterBold = null) {
-        if(document.querySelector('.Alphabet') != null){
+        if (document.querySelector('.Alphabet') != null) {
             contentDiv.innerHTML = "";
         }
         const alphabetDiv = document.createElement("div");
@@ -171,10 +171,10 @@ document.addEventListener("DOMContentLoaded", function () {
         renderDictionary();
     };
 
-    if(activeSwitcher != "dictionary"){
+    if (activeSwitcher != "dictionary") {
         renderAlphabet();
     }
-    if(activeLetter != null){
+    if (activeLetter != null) {
         setActiveLetter(activeLetter);
     }
 });

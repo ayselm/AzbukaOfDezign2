@@ -1,59 +1,67 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 const questions = [
     {
         question: "Какое назначение иконок в интерфейсе?",
         answers: [
-            { text: "Увеличить размер текста", isCorrect: false },
-            { text: "Упростить восприятие информации", isCorrect: true },
-            { text: "Изменить цвет фона", isCorrect: false },
-            { text: "Добавить анимацию", isCorrect: false }
+            {text: "Увеличить размер текста", isCorrect: false},
+            {text: "Упростить восприятие информации", isCorrect: true},
+            {text: "Изменить цвет фона", isCorrect: false},
+            {text: "Добавить анимацию", isCorrect: false}
         ]
     },
     {
         question: "Какой стиль иконок считается наиболее универсальным?",
         answers: [
-            { text: "Ретро", isCorrect: false },
-            { text: "Плоский (flat)", isCorrect: true },
-            { text: "Объемный (3D)", isCorrect: false },
-            { text: "Минималистичный", isCorrect: false }
+            {text: "Ретро", isCorrect: false},
+            {text: "Плоский (flat)", isCorrect: true},
+            {text: "Объемный (3D)", isCorrect: false},
+            {text: "Минималистичный", isCorrect: false}
         ]
     },
     {
         question: "Что такое «иконографика»?",
         answers: [
-            { text: "Научная дисциплина, изучающая иконки", isCorrect: false },
-            { text: "Искусство создания иконок и символов", isCorrect: true },
-            { text: "Методология тестирования иконок", isCorrect: false },
-            { text: "Процесс выбора шрифтов для иконок", isCorrect: false }
+            {text: "Научная дисциплина, изучающая иконки", isCorrect: false},
+            {text: "Искусство создания иконок и символов", isCorrect: true},
+            {text: "Методология тестирования иконок", isCorrect: false},
+            {text: "Процесс выбора шрифтов для иконок", isCorrect: false}
         ]
     },
     {
         question: "Какой из следующих форматов файлов чаще всего используется для веб-иконок?",
         answers: [
-            { text: "JPEG", isCorrect: false },
-            { text: "PNG", isCorrect: true },
-            { text: "PDF", isCorrect: false },
-            { text: "DOCX", isCorrect: false }
+            {text: "JPEG", isCorrect: false},
+            {text: "PNG", isCorrect: true},
+            {text: "PDF", isCorrect: false},
+            {text: "DOCX", isCorrect: false}
         ]
     },
     {
         question: "Что важно учитывать при создании иконок для мобильных приложений?",
         answers: [
-            { text: "Размер экрана и разрешение", isCorrect: true },
-            { text: "Цвет шрифта", isCorrect: false },
-            { text: "Длительность анимации", isCorrect: false },
-            { text: "Стиль музыки", isCorrect: false }
+            {text: "Размер экрана и разрешение", isCorrect: true},
+            {text: "Цвет шрифта", isCorrect: false},
+            {text: "Длительность анимации", isCorrect: false},
+            {text: "Стиль музыки", isCorrect: false}
         ]
     }
 ];
 
 const results = [
-    { title: "Любознательный джун", descr: "Тебя впереди ожидает большой,<br/>но очень интересный путь!", img: '/images/img11.png' },
-    { title: "Любознательный джун", descr: "Тебя впереди ожидает большой,<br/>но очень интересный путь!", img: '/images/img11.png' },
-    { title: "Уверенный миддл", descr: "У тебя неплохой результат!<br/>ты уверенный миддл!", img: '/images/img10.png' },
-    { title: "Уверенный миддл", descr: "У тебя неплохой результат!<br/>ты уверенный миддл!", img: '/images/img10.png' },
-    { title: "Заряженный сениор", descr: "У тебя высокий результат,<br/>ты большой молодец!", img: '/images/img12.png' }
+    {
+        title: "Любознательный джун",
+        descr: "Тебя впереди ожидает большой,<br/>но очень интересный путь!",
+        img: '/images/img11.png'
+    },
+    {
+        title: "Любознательный джун",
+        descr: "Тебя впереди ожидает большой,<br/>но очень интересный путь!",
+        img: '/images/img11.png'
+    },
+    {title: "Уверенный миддл", descr: "У тебя неплохой результат!<br/>ты уверенный миддл!", img: '/images/img10.png'},
+    {title: "Уверенный миддл", descr: "У тебя неплохой результат!<br/>ты уверенный миддл!", img: '/images/img10.png'},
+    {title: "Заряженный сениор", descr: "У тебя высокий результат,<br/>ты большой молодец!", img: '/images/img12.png'}
 ];
 
 const Quiz1 = () => {
@@ -70,7 +78,7 @@ const Quiz1 = () => {
             setCurrentQuestion((prevQuestion) => prevQuestion + 1);
         } else {
             setShowResult(true);
-            setTimeout(()=>{
+            setTimeout(() => {
                 window.adjustFooterPosition();
             }, 100);
         }
@@ -80,7 +88,7 @@ const Quiz1 = () => {
         setCurrentQuestion(0);
         setScore(0);
         setShowResult(false);
-        setTimeout(()=>{
+        setTimeout(() => {
             window.adjustFooterPositionBreak();
         }, 100);
     };
@@ -89,10 +97,10 @@ const Quiz1 = () => {
         <div className="Quiz">
             {showResult ? (
                 <div className="result">
-                    <img src={results[score].img} alt="Результат" />
+                    <img src={results[score].img} alt="Результат"/>
                     <h2>{score}/{questions.length}</h2>
                     <h3>{results[score].title}</h3>
-                    <p dangerouslySetInnerHTML={{ __html: results[score].descr }} />
+                    <p dangerouslySetInnerHTML={{__html: results[score].descr}}/>
                     <button onClick={restartQuiz}>Пройти тест снова</button>
                 </div>
             ) : (

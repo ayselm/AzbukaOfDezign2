@@ -904,4 +904,4 @@ globalThis.articles = [
     }
 ];
 
-module.exports = { articles: globalThis.articles };
+module.exports = {articles: globalThis.articles};

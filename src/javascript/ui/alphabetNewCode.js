@@ -110,4 +110,4 @@ function renderDictionary(articles) {
     `;
 }
 
-module.exports = { renderDictionaryForLetter, renderDictionary };
+module.exports = {renderDictionaryForLetter, renderDictionary};

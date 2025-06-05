@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom/client';
 import Quiz from '../Quiz2.jsx';
 
 const App = () => {
-  return (
-      <>
-          <Quiz />
-      </>
-  );
+    return (
+        <>
+            <Quiz/>
+        </>
+    );
 };
 
 // Рендеринг приложения в DOM
 const root = document.getElementById("reactComponentRoot");
-ReactDOM.createRoot(root).render(<App />);
+ReactDOM.createRoot(root).render(<App/>);

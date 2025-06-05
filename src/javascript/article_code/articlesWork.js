@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const nopaginationRelatedIsActive = nopaginationRelated ?? false;
     const currentSlug = window.location.pathname.split('/').pop().replace('.html', '');
 
@@ -20,20 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const articlesHtml = paginatedArticles.map(article => `
             <a href="/articles/${article.link_page}">
                 <div>
-                    <img src="${(constArticle ? "." : "" )+ article.preview_img}" alt="${article.title}">
+                    <img src="${(constArticle ? "." : "") + article.preview_img}" alt="${article.title}">
                     <h3>${article.title}</h3>
                     <h4 class="Descr">${article.short_desc}</h4>
                 </div>
                 <div class="Nav">
                     <h5 class="tag">${article.tags.join(', ')}</h5>
                     <span class="time">
-                        ${ nopaginationRelatedIsActive ?
+                        ${nopaginationRelatedIsActive ?
             `<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9.70196 18.3551C5.0449 18.3551 1.26831 14.5785 1.26831 9.92144C1.26831 5.26438 5.0449 1.48779 9.70196 1.48779C14.3607 1.48779 18.1356 5.26438 18.1356 9.92144C18.1356 14.5785 14.3607 18.3551 9.70196 18.3551" stroke="white" stroke-width="1.26505" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M9.50049 7.07764V10.3718L12.0913 11.9523" stroke="white" stroke-width="1.26505" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-`:
-           ` <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+` :
+            ` <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M9.58808 17.8202C4.9062 17.8202 1.1095 14.0235 1.1095 9.34162C1.1095 4.65974 4.9062 0.863037 9.58808 0.863037C14.2716 0.863037 18.0667 4.65974 18.0667 9.34162C18.0667 14.0235 14.2716 17.8202 9.58808 17.8202"
                     stroke="#24262B" stroke-opacity="0.5" stroke-width="1.27179" stroke-linecap="round"
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.querySelector('.AriclesBlock').innerHTML = articlesHtml;
 
-        if(!nopaginationRelatedIsActive) {
+        if (!nopaginationRelatedIsActive) {
             updatePagination(filteredArticles.length, page);
             document.querySelector('.stolen')?.classList?.add('hidden');
         }
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.Pagination').innerHTML = paginationHtml;
     }
 
-    if(!nopaginationRelatedIsActive) {
+    if (!nopaginationRelatedIsActive) {
         document.querySelector('.Pagination').addEventListener('click', function (event) {
             event.preventDefault();
             if (event.target.tagName === 'A') {
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.querySelectorAll('.filter h4').forEach(filter => {
-        filter.addEventListener('click', function() {
+        filter.addEventListener('click', function () {
             document.querySelectorAll('.filter h4').forEach(f => f.classList.remove('active'));
 
             this.classList.add('active');
@@ -145,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     displayArticles(currentPage, currentCategory);
 });
-
 
 
 const navigationSlipper = document.querySelector('.navigationSlipper');

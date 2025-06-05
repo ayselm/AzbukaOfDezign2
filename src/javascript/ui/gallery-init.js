@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const gallery = document.querySelector('.gallery');
     if (!gallery) return;
 
@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (index < 0) index = slides.length - 1;
         if (index >= slides.length) index = 0;
-        
+
         track.style.transform = `translateX(-${index * 100}%)`;
-        
+
         dots.forEach((dot, i) => {
             dot.classList.toggle('active', i === index);
         });
-        
+
         current = index;
 
         // Reset animation flag after transition
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function handleSwipe() {
         if (isAnimating) return;
-        
+
         const diff = touchStartX - touchEndX;
         if (Math.abs(diff) > 50) { // Minimum swipe distance
             if (diff > 0) {

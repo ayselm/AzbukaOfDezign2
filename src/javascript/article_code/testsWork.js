@@ -1,7 +1,7 @@
 var currentTestFilter = "все";
 
 document.querySelectorAll('.filter h4').forEach(filter => {
-    filter.addEventListener('click', function() {
+    filter.addEventListener('click', function () {
         const wrapper = document.querySelector('.wrapper');
         const wrapperHeight = wrapper.offsetHeight;
 

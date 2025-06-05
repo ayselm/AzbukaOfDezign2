@@ -6,11 +6,11 @@ import Quiz from '../Quiz4.jsx';
 const App = () => {
     return (
         <>
-            <Quiz />
+            <Quiz/>
         </>
     );
 };
 
 // Рендеринг приложения в DOM
 const root = document.getElementById("reactComponentRoot");
-ReactDOM.createRoot(root).render(<App />);
+ReactDOM.createRoot(root).render(<App/>);

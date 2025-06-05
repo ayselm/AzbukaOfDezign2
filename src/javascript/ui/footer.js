@@ -1,4 +1,4 @@
-window.adjustFooterPosition = function() {
+window.adjustFooterPosition = function () {
     const footer = document.querySelector('.footer');
     const viewportHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
@@ -13,7 +13,7 @@ window.adjustFooterPosition = function() {
     }
 }
 
-window.adjustFooterPositionBreak = function() {
+window.adjustFooterPositionBreak = function () {
     const footer = document.querySelector('.footer');
     footer.style.position = 'static';
 }
